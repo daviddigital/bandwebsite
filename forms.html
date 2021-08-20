@@ -1,15 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+
 <body>
     <h1> Forms Demo</h1>
     <form action="/tacos ">
-    
+        <button type="button">Dumb button wont submit.</button>
+        <p>
+            <label for="fullname">Enter User Name</label>
+            <input type="text" name="fullname" id="fullname" placeholder="username">
+        </p>
+        <p>
+            <label for="password">Enter Password</label>
+            <input type="password" id="password" name="password" placeholder="password">
+        </p>
+        <p>
+            <label for="color">Enter Favourite Colour</label>
+            <input type="color" id="color" name="color">
+        </p>
+        <p>
+            <label for="favnumber">Enter fav number</label>
+            <input type="number" id="favnumber" name="favnumber" placeholder="age">
+        </p>
+        <button type="submit">Submit</button>
+    </form>
+
+    <h1> Reddit Search</h1>
+    <form action="https://www.reddit.com/search/">
+        <label for="search-input">Search Query</label>
+        <input type="text" name="q" id="search-input">
+        <button type="submit">Submit</button>
+    </form>
+    <h1> Google Search</h1>
+    <form action="https://www.google.com/search">
+        <label for="search-input">Search Query</label>
+        <input type="text" name="q" id="search-input">
+        <button type="submit">Submit</button>
+    </form>
+    <h1> Youtube Search</h1>
+    <form action="https://www.youtube.com/results">
+        <label for="search-input">Search Query</label>
+        <input type="text" name="search_query" id="search-input">
+        <button type="submit">Submit</button>
+    </form>
+
+    <h2> More Inputs</h2>
+    <form action="/birds">
+        <input type="checkbox" name="agree" id="agree" checked=true>
+        <label for="agree">I agree to everything</label>
+        <button type="submit">Submit</button>
+        <p>
+            <input type="radio" name="size" id="1" value="S">
+            <label for="1"> S </label>
+            <input type="radio" name="size" id="2" value="M">
+            <label for="2"> M </label>
+            <input type="radio" name="size" id="3" value="L">
+            <label for="3"> L </label>
+        </p>
     </form>
 </body>
+
 </html>
