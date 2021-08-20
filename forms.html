@@ -9,12 +9,28 @@
 </head>
 
 <body>
+    <h1> Range</h1>
+    <form action="/cheese">
+    <p>
+        <label for="cheese">How much cheese?</label> 
+        <input oninput="this.nextElementSibling.value = this.value" type="range" value= "5" min="10" max="100" name="cheese" id="cheese">
+        <P>
+            
+        </P>
+        <button type="submit">Submit</button>
+        
+    </p>
+</form>
+<form>
+    <input type="range" name="amountRange" min="0" max="20" value="0" oninput="this.form.amountInput.value=this.value" />
+    <input type="number" name="amountInput" min="0" max="20" value="0" oninput="this.form.amountRange.value=this.value" />
+</form>
     <h1> Forms Demo</h1>
     <form action="/tacos ">
         <button type="button">Dumb button wont submit.</button>
         <p>
             <label for="fullname">Enter User Name</label>
-            <input type="text" name="fullname" id="fullname" placeholder="username">
+            <input type="text" required minlength="10" name="fullname" id="fullname" placeholder="username">
         </p>
         <p>
             <label for="password">Enter Password</label>
@@ -77,6 +93,7 @@
     </select>
     <button type="submit">Submit</button>
 </form>
+
 </body>
 
 </html>
